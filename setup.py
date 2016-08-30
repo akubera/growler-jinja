@@ -26,11 +26,6 @@ TESTS_REQUIRE = [
 
 PACKAGES = [
     'growler_jinja',
-    'growler_ext.jinja_renderer',
-    'growler_ext.JinjaRenderer',
-]
-
-NAMESPACES = [
     'growler_ext',
 ]
 
@@ -66,7 +61,6 @@ setup(
     extras_require=OPTIONAL_REQUIRES,
     tests_require=TESTS_REQUIRE,
     packages=PACKAGES,
-    namespace_packages=NAMESPACES,
     platforms='all',
     scripts=glob('scripts/*')
 )
